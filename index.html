@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayWithUs - Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/01f33eba8b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
-        <nav>
+        <nav id="navBar">
             <img src="Images/swu_logo.png" alt="Website-logo" class="logo">
             <ul class="nav-items">
-                <li><a href="#">Exclusives</a></li>
-                <li><a href="#">Rent</a></li>
+                <li><a href="#" class="active">Trending Places</a></li>
+                <li><a href="#">Travel India</a></li>
                 <li><a href="#">Our Packages</a></li>
             </ul>
             <a href="#" class="reg-btn">Register Now</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
         </nav>
 
         <div class="container">
@@ -151,6 +153,59 @@
                 <h3>Uttarakhand</h3>
             </div>
         </div>
+
+        <div class="calltoaction">
+            <h3>Sharing <br> Is Earning Now</h3>
+            <p>It's time to save money for youeself by<br>sharing your extra space</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+        <h2 class="sub-title">Traveller Stories</h2>
+        <div class="stories">
+            <div>
+                <img src="Images/a1.jpg" alt="a1">
+                <p>Explore the Greenary</p>
+            </div>
+
+            <div>
+                <img src="Images/a2.jpg" alt="a2">
+                <p>Take a look into Cold Mountains</p>
+            </div>
+
+            <div>
+                <img src="Images/a4.jpg" alt="a4">
+                <p>Feel the Blue Oceans</p>
+            </div>
+        </div>
+
+        <a href="#" class="start-btn">Start making money</a>
+
+        <div class="about-msg">
+            <h2>About StayWithUs</h2>
+            <p>At StayWithUs, we’re passionate about creating memorable travel experiences. 
+                Our platform connects you with unique stays around the world, whether you’re an adventurous explorer,
+                a business traveler, or simply seeking a cozy getaway. Rest assured knowing that your bookings are safe
+                and protected and  Read honest guest reviews to make informed decisions.
+            </p>
+        </div>
+
+        <div class="footer">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <hr>
+           <p> Copyright @ 2024, StayWithUs India</p>
+        </div>
+
     </div>
+
+    <script>
+        var navBar = document.getElementById("navBar");
+
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
 </body>
 </html>
